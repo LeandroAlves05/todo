@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Todo",
+    "collectionId": "070830a7-f159-4012-9cdd-b80f192b5bf6",
+    "dateExported": "2024-11-05T13:56:14.638Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "944b7740-631b-409d-8e5c-fb17cd86462e",
+            "colId": "070830a7-f159-4012-9cdd-b80f192b5bf6",
+            "containerId": "",
+            "name": "GET Todo",
+            "url": "http://localhost:8000/todos/3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-05T13:46:26.690Z",
+            "modified": "2024-11-05T13:48:36.764Z",
+            "headers": []
+        },
+        {
+            "_id": "b51d4146-66b2-4a60-9983-9dc9cbfd054e",
+            "colId": "070830a7-f159-4012-9cdd-b80f192b5bf6",
+            "containerId": "",
+            "name": "GET Todos",
+            "url": "http://localhost:8000/todos/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-05T13:46:18.529Z",
+            "modified": "2024-11-05T13:46:22.679Z",
+            "headers": []
+        },
+        {
+            "_id": "45bb605e-9c7c-41ae-8f46-5b375ac1b1bd",
+            "colId": "070830a7-f159-4012-9cdd-b80f192b5bf6",
+            "containerId": "",
+            "name": "POST Todo",
+            "url": "http://localhost:8000/todos/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-11-05T13:46:46.350Z",
+            "modified": "2024-11-05T13:48:23.088Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"test 2\",\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bd274bf5-c2a1-4996-93c2-3eed38638bee",
+            "colId": "070830a7-f159-4012-9cdd-b80f192b5bf6",
+            "containerId": "",
+            "name": "PUT Todo",
+            "url": "http://localhost:8000/todos/2",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-11-05T13:48:48.742Z",
+            "modified": "2024-11-05T13:50:38.795Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"changed\",\n  \"completed\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1263ce25-421c-49d1-b7f3-77343972ff52",
+            "colId": "070830a7-f159-4012-9cdd-b80f192b5bf6",
+            "containerId": "",
+            "name": "DELETE Todo",
+            "url": "http://localhost:8000/todos/1",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-11-05T13:55:44.291Z",
+            "modified": "2024-11-05T13:56:06.364Z",
+            "headers": []
+        }
+    ],
+    "ref": "IA2bO-7AHhd-hXZNT0N-VB1sadqqaQmKCfXk69xntFva3lynhY_zlaGJi5VUcQfujzXq7Heh7qe2mXDi_3TK8g"
+}
