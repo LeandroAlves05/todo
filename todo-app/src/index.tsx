@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { createContext, useContext } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import axios from 'axios';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const api = axios.create({ baseURL: 'http://localhost:8000' });
+
+const AppContext = createContext({ api });
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <AppContext.Provider value={{ api }}>
+        <App />
+    </AppContext.Provider>
 );
+
+export const useAppContext = () => useContext(AppContext);
