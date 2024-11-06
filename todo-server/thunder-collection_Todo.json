@@ -43,7 +43,7 @@
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\": \"test 2\",\n}",
+                "raw": "{\n  \"text\": \"test 2\",\n}",
                 "form": []
             }
         },
@@ -60,7 +60,7 @@
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\": \"changed\",\n  \"completed\": true\n}",
+                "raw": "{\n  \"text\": \"changed\",\n  \"completed\": true\n}",
                 "form": []
             }
         },

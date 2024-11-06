@@ -107,7 +107,7 @@ The frontend communicates with the backend using **Axios** for API requests. The
 6. Initialize the database container using Docker:
 
     ```bash
-    docker-compose up -d
+    sudo docker compose up -d
     ```
 
 7. Run the fastAPI server application:

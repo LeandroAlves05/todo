@@ -1,14 +1,10 @@
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
 .app-container {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
 }
 
-.title {
+.text {
     color: #333;
     font-weight: 600;
 }
@@ -17,6 +13,10 @@
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
+}
+
+.add-button {
+    margin-top: 16px;
 }
 
 .todo-list {
@@ -83,4 +83,16 @@
 
 .todo-item.pending {
     background-color: #fff3e0;
+}
+
+.editing-todo {
+    width: 100%;
+    padding: 0;
+    padding-right: 15px;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
