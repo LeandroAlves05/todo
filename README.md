@@ -120,6 +120,12 @@ The frontend communicates with the backend using **Axios** for API requests. The
     fastapi dev app/main.py
     ```
 
+8. Run python formatters (Optional)
+    ```bash
+    black .
+    mypy .
+    ```
+
 ---
 
 ## Project Details
