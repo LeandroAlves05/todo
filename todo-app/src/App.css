@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .app-container {
     background-color: #f5f5f5;
     padding: 20px;

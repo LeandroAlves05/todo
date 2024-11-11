@@ -57,6 +57,10 @@ Before running the project locally, ensure that you have the following installed
 
 The frontend communicates with the backend using **Axios** for API requests. The base URL for the backend is set via the `REACT_APP_API_URL` environment variable.
 
+6. Run lint formatter (Optional)
+    ```bash
+    npm run lint
+    ```
 ---
 
 ### Running the Backend (FastAPI with PostgreSQL and Docker)
@@ -114,6 +118,12 @@ The frontend communicates with the backend using **Axios** for API requests. The
 
     ```bash
     fastapi dev app/main.py
+    ```
+
+8. Run python formatters (Optional)
+    ```bash
+    black .
+    mypy .
     ```
 
 ---

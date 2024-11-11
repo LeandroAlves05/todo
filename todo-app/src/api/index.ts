@@ -25,7 +25,7 @@ export const getTodos = async () => {
     }
 };
 
-export const createTodo = async (todo: Omit<Todo, 'id'>) => {
+export const createTodo = async (todo: Omit<Todo, "id">) => {
     try {
         const response = await api.post("/todos", todo);
         return response.data;
