@@ -1,12 +1,12 @@
 # Todo App - Full Stack Application
 
-This project is a **Full Stack Todo Application** with the **Frontend** built in **React** using **Material UI** and the **Backend** built with **FastAPI**. The backend connects to a **PostgreSQL** database which is containerized with **Docker** for local development.
+This project is a **Full Stack Todo Application** with the **Frontend** built in **React** using **Vite** and **Material UI** and the **Backend** built with **FastAPI**. The backend connects to a **PostgreSQL** database which is containerized with **Docker** for local development.
 
 ## Project Structure
 
 The project is divided into two main parts:
 
-- **`todo-app`**: The React frontend application.
+- **`todo-app`**: The Vitejs frontend application.
 - **`todo-server`**: The Python FastAPI backend application.
 
 ## Prerequisites
@@ -47,10 +47,10 @@ Before running the project locally, ensure that you have the following installed
     npm install
     ```
 
-4. Start the React development server:
+4. Start the Vite development server:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 5. Open your browser and visit `http://localhost:3000` to see the app running.
@@ -131,7 +131,7 @@ The frontend communicates with the backend using **Axios** for API requests. The
 ## Project Details
 
 ### Frontend (`todo-app`)
-- Built with **React**.
+- Built with **Vitejs**.
 - Styled using **Material UI** components.
 - **Axios** is used to make API calls to the backend.
 

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const api = axios.create({
     baseURL: API_URL,
@@ -16,40 +16,20 @@ export interface Todo {
 }
 
 export const getTodos = async () => {
-    try {
-        const response = await api.get("/todos");
-        return response.data;
-    } catch (error) {
-        console.error("Error while getting Todos (api error):", error);
-        throw error;
-    }
+    const response = await api.get("/todos");
+    return response.data;
 };
 
 export const createTodo = async (todo: Omit<Todo, "id">) => {
-    try {
-        const response = await api.post("/todos", todo);
-        return response.data;
-    } catch (error) {
-        console.error("Error while creating Todo (api error):", error);
-        throw error;
-    }
+    const response = await api.post("/todos", todo);
+    return response.data;
 };
 
 export const updateTodo = async (todoId: number, todo: Todo) => {
-    try {
-        const response = await api.put(`/todos/${todoId}`, todo);
-        return response.data;
-    } catch (error) {
-        console.error("Error while updating Todo (api error):", error);
-        throw error;
-    }
+    const response = await api.put(`/todos/${todoId}`, todo);
+    return response.data;
 };
 
 export const deleteTodo = async (todoId: number) => {
-    try {
-        await api.delete(`/todos/${todoId}`);
-    } catch (error) {
-        console.error("Error while deleting Todo (api error):", error);
-        throw error;
-    }
+    await api.delete(`/todos/${todoId}`);
 };
